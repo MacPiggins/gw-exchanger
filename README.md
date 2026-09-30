@@ -2,6 +2,8 @@
 
 A lightweight Go gRPC service for retrieving exchange rates from a PostgreSQL-backed data store.
 
+> Part of the **GW stack** — see the [general deployment repository](https://github.com/MacPiggins/gw-deploy) for deployment configuration and infrastructure.
+
 ## Overview
 
 `gw-exchanger` exposes exchange-rate queries over gRPC and loads rates from a `Rates` table in PostgreSQL. On startup it creates the database connection, runs automatic migrations, and serves the gRPC API on the configured port.
